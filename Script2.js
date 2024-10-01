@@ -1,5 +1,5 @@
-const images = document.querySelectorAll('[name="rase"]');
-const imageContainer = document.querySelector('img_rase');
+const images = document.querySelectorAll('[name="race"]');
+const imageContainer = document.querySelector('img_race');
 
 // Функция для обновления изображения
 function updateImage() {
