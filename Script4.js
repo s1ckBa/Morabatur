@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('[name="race"]');
+    const images = document.querySelectorAll('[name="class"]');
     let currentImageIndex = 0;
 
-    // Р¤СѓРЅРєС†РёСЏ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РєР°СЂС‚РёРЅРєРё
+    // Функция для отображения картинки
     function updateImage(index) {
-        const oldImg = document.getElementById('container_img1').firstChild;
+        const oldImg = document.getElementById('container_img2').firstChild;
         if (oldImg) {
             oldImg.remove();
         }
         const imgElement = document.createElement('img');
-        imgElement.src = `images/race/${images[index].value}.jpg`;
+        imgElement.src = `images/class/${images[index].value}.jpg`;
         imgElement.width = 250;
         imgElement.height = 250;
         imgElement.style.borderRadius = '32px';
-        container_img1.appendChild(imgElement);
+        container_img2.appendChild(imgElement);
     }
 
-    // РћР±СЂР°Р±РѕС‚РєР° СЃРѕР±С‹С‚РёР№ РґР»СЏ РєРЅРѕРїРѕРє
+    // Обработка событий для кнопок
     images.forEach((button, index) => {
         button.addEventListener('change', () => {
             if (button.checked) {
@@ -26,6 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ
+    // Инициализация изображения
     updateImage(currentImageIndex);
 });
