@@ -1,16 +1,31 @@
-const images = document.querySelectorAll('[name="race"]');
-const imageContainer = document.querySelector('img_race');
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('[name="race"]');
+    let currentImageIndex = 0;
 
-// Функция для обновления изображения
-function updateImage() {
-    let selectedIndex = parseInt(this.value);
-    if (!isNaN(selectedIndex)) {
-        imageContainer.src = 'images/' + selectedIndex + '.jpg';
+    // Функция для отображения картинки
+    function displayImage(index) {
+        const oldImg = document.getElementById('container_img1').firstChild;
+        if (oldImg) {
+            oldImg.remove();
+        }
+        const imgElement = document.createElement('img');
+        imgElement.src = `images/race/${images[index].value}.jpg`;
+        imgElement.width = 250;
+        imgElement.height = 250;
+        imgElement.style.borderRadius = '32px';
+        container_img1.appendChild(imgElement);
     }
-}
 
-// Обработчик события изменения состояния радио кнопок
-images.forEach((item) => item.addEventListener('change', updateImage));
+    // Обработка событий для кнопок
+    images.forEach((button, index) => {
+        button.addEventListener('change', () => {
+            if (button.checked) {
+                currentImageIndex = index;
+                displayImage(currentImageIndex);
+            }
+        });
+    });
 
-// Инициализация изображения при загрузке страницы
-updateImage();
+    // Инициализация изображения
+    displayImage(currentImageIndex);
+});
