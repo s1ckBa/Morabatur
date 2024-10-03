@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         imgElement.src = `images/race/${images[index].value}.jpg`;
         imgElement.width = 250;
         imgElement.height = 250;
-        imgElement.style.borderRadius = '32px';
+        imgElement.style.borderRadius = '16px';
         container_img1.appendChild(imgElement);
     }
 

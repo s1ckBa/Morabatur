@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    
 </head>
 <body>
     <p align="center">
@@ -13,6 +14,7 @@
         Удобный интерфейс и подсказки помогут вам при выборе. Удачи!
     </p>
 
+    <div>
     Раса:<br>
     <input type="radio" id="eld" value="eld" name="race" class="radio" checked="checked">
     <label for="eld">Эльдары</label><br>
@@ -73,7 +75,7 @@
 
     <input type="radio" id="gnom" value="gnom" name="race" class="radio">
     <label for="gnom">Гномы</label><br><br>
-
+    </div>
 
     <div class="block">
         <div class="container_character">
@@ -89,52 +91,55 @@
 
     
     <div>
-    Класс:<br>
+        Класс:<br>
 
-    <input type="radio" id="kill" value="kill" name="class" class="radio" checked="checked">
-    <label for="kill">Ассасин</label><br>
+        <input type="radio" id="kill" value="kill" name="class" class="radio" checked="checked">
+        <label for="kill">Ассасин</label><br>
 
-    <input type="radio" id="bard" value="bard" name="class" class="radio">
-    <label for="bard">Бард</label><br>
+        <input type="radio" id="bard" value="bard" name="class" class="radio">
+        <label for="bard">Бард</label><br>
 
-    <input type="radio" id="berserk" value="berserk" name="class" class="radio">
-    <label for="berserk">Берсерк</label><br>
+        <input type="radio" id="berserk" value="berserk" name="class" class="radio">
+        <label for="berserk">Берсерк</label><br>
 
-    <input type="radio" id="war" value="war" name="class" class="radio">
-    <label for="war">Воин</label><br>
+        <input type="radio" id="wit" value="wit" name="class" class="radio">
+        <label for="wit">Ведьмак</label><br>
 
-    <input type="radio" id="thf" value="thf" name="class" class="radio">
-    <label for="thf">Вор</label><br>
+        <input type="radio" id="war" value="war" name="class" class="radio">
+        <label for="war">Воин</label><br>
 
-    <input type="radio" id="inj" value="inj" name="class" class="radio">
-    <label for="inj">Инженер</label><br>
+        <input type="radio" id="thf" value="thf" name="class" class="radio">
+        <label for="thf">Вор</label><br>
 
-    <input type="radio" id="kler" value="kler" name="class" class="radio">
-    <label for="kler">Клерик</label><br>
+        <input type="radio" id="inj" value="inj" name="class" class="radio">
+        <label for="inj">Инженер</label><br>
 
-    <input type="radio" id="magic" value="magic" name="class" class="radio">
-    <label for="magic">Колдун</label><br>
+        <input type="radio" id="kler" value="kler" name="class" class="radio">
+        <label for="kler">Клерик</label><br>
 
-    <input type="radio" id="marod" value="marod" name="class" class="radio">
-    <label for="marod">Мародер</label><br>
+        <input type="radio" id="magic" value="magic" name="class" class="radio">
+        <label for="magic">Колдун</label><br>
 
-    <input type="radio" id="gun" value="gun" name="class" class="radio">
-    <label for="gun">Оруженосец</label><br>
+        <input type="radio" id="marod" value="marod" name="class" class="radio">
+        <label for="marod">Мародер</label><br>
 
-    <input type="radio" id="hunt" value="hunt" name="class" class="radio">
-    <label for="hunt">Охотник</label><br>
+        <input type="radio" id="gun" value="gun" name="class" class="radio">
+        <label for="gun">Оруженосец</label><br>
 
-    <input type="radio" id="knt" value="knt" name="class" class="radio">
-    <label for="knt">Рыцарь</label><br>
+        <input type="radio" id="hunt" value="hunt" name="class" class="radio">
+        <label for="hunt">Охотник</label><br>
 
-    <input type="radio" id="arch" value="arch" name="class" class="radio">
-    <label for="arch">Стрелок</label><br>
+        <input type="radio" id="knt" value="knt" name="class" class="radio">
+        <label for="knt">Рыцарь</label><br>
 
-    <input type="radio" id="wizard" value="wizard" name="class" class="radio">
-    <label for="wizard">Чародей</label><br>
+        <input type="radio" id="arch" value="arch" name="class" class="radio">
+        <label for="arch">Стрелок</label><br>
 
-    <input type="radio" id="waman" value="waman" name="class" class="radio">
-    <label for="waman">Шаман</label><br>
+        <input type="radio" id="wizard" value="wizard" name="class" class="radio">
+        <label for="wizard">Чародей</label><br>
+
+        <input type="radio" id="waman" value="waman" name="class" class="radio">
+        <label for="waman">Шаман</label><br><br>
     </div>
 
     <div class="block">
@@ -149,7 +154,30 @@
         </div>
     </div>
 
-    
-        
+
+    <form name="my">
+        <div>
+            Выберите месяц для вашего персонажна (это дарует дополнительно некоторые навыки):<br>
+            <select name="month" size="1">
+                <option value="jan" selected="selected">Январь (Созвездие Горы)</option>
+                <option value="febr">Февраль (Созвездие Фермера)</option>
+                <option value="march">Март (Созвездие Волка)</option>
+                <option value="apr">Апрель (Созвездие Колеса)</option>
+                <option value="may">Май (Созвездие Арфы)</option>
+                <option value="jun">Июнь (Созвездие Топора)</option>
+                <option value="jul">Июль (Созвездие Книги)</option>
+                <option value="aug">Август (Созвездие Стрелы)</option>
+                <option value="sept">Сентябрь (Созвездие Шута)</option>
+                <option value="oct">Октябрь (Созвездие Башни)</option>
+                <option value="nov">Ноябрь (Созвездие Короля)</option>
+                <option value="dec">Декабрь (Созвездие Орла)</option>
+            </select>
+            <div id="selection"></div>
+            
+        </div>
+    </form>
+
+    <script src="Script5.js"></script>
+
 </body>
 </html>

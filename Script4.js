@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('[name="class"]');
     let currentImageIndex = 0;
 
-    // Функция для отображения картинки
+    // Р¤СѓРЅРєС†РёСЏ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РєР°СЂС‚РёРЅРєРё
     function updateImage(index) {
         const oldImg = document.getElementById('container_img2').firstChild;
         if (oldImg) {
@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
         imgElement.src = `images/class/${images[index].value}.jpg`;
         imgElement.width = 250;
         imgElement.height = 250;
-        imgElement.style.borderRadius = '32px';
+        imgElement.style.borderRadius = '16px';
         container_img2.appendChild(imgElement);
     }
 
-    // Обработка событий для кнопок
+    // РћР±СЂР°Р±РѕС‚РєР° СЃРѕР±С‹С‚РёР№ РґР»СЏ РєРЅРѕРїРѕРє
     images.forEach((button, index) => {
         button.addEventListener('change', () => {
             if (button.checked) {
@@ -26,6 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Инициализация изображения
+    // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ
     updateImage(currentImageIndex);
 });
