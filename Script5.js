@@ -1,26 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const monthSelect = document.my.month;
-    const selection = document.getElementById("selection");
+    const contentTypeSelect = document.getElementById('month');
+    const textContainer = document.getElementById('container_text_month');
 
-    function changeOption() {
-        const selectedOption = 
-        {
+    // Обработка событий для кнопок
+    contentTypeSelect.addEventListener('change', () => {
+        updateTextContainer(contentTypeSelect.value);
+    });
+
+    // Функция для обновления содержимого контейнера
+    function updateTextContainer(selectedTextId) {
+        const texts = {
             jan: 'Дарует навыки: Тяжелые доспехи; двуручное оружие; изменение',
-            feb: 'sda',
-            mar: 'czv',
-            apr: 'czvs',
-            may: 'dav',
-            jun: 'adsf',
-            jul: 'sadv',
-            aug: 'zx',
-            sep: 'jrt',
-            oct: 'hrt',
-            nov: 'mfg',
-            dec: 'qwerty'
-        }
-        selection.textContent = text[selectedOption];
+            febr: 'Дарует навыки: Древковое оружие; инженерия; скрытность',
+            march: 'Дарует навыки: Рукопашный бой; одноручное оружие; легкие доспехи',
+            apr: 'Дарует навыки: Алхимия; стрельба из арбалета; верховая езда',
+            may: 'Дарует навыки: Красноречие; торговля; магия хаоса',
+            jun: 'Дарует навыки: Метательное оружие; легкие доспехи; изменение',
+            jul: 'Дарует навыки: Магия хаоса; зачарование; красноречие',
+            aug: 'Дарует навыки: Стрельба из лука; иллюзия; мистицизм',
+            sept: 'Дарует навыки: Верховая езда; скрытность; короткие клинки',
+            oct: 'Дарует навыки: Некромантия; блокирование; тяжелые доспехи',
+            nov: 'Дарует навыки: Магия восстановления; карманные кражи; выносливость',
+            dec: 'Дарует навыки: Шаманизм; взлом; атлетика'
+        };
+        textContainer.innerHTML = texts[selectedTextId];
     }
-    monthSelect.addEventListener("change", changeOption);
 
+    // Инициализация
     updateTextContainer('jan');
 });
