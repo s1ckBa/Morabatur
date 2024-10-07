@@ -4,17 +4,26 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    
+    <link rel="stylesheet" href="BackGr.css">
+    <link rel="stylesheet" href="fon.css">
 </head>
 <body>
-    <p align="center">
+<div class="block">
+    <div class="button">
+        <p>Карта мира История мира</p>
+    </div>
+    <div class="body">
+        <p align="center">
         Доброго времени суток!
         Перед вами меню создания своего персонажа
         по вселенной "Морабатур"<sup>©</sup>.<br>
         Удобный интерфейс и подсказки помогут вам при выборе. Удачи!
-    </p>
+        </p>
+    </div>
+    
+    <div class="block_1"></div>
+    <div class="block_1_1">
 
-    <div>
         <i><b>Раса:</b></i><br>
         <label><b>Люди:</b></label><br>
         <input type="radio" id="eld" value="eld" name="race" class="radio" checked="checked">
@@ -46,6 +55,11 @@
 
         <input type="radio" id="finil" value="finil" name="race" class="radio">
         <label for="finil">Финилийцы</label><br><br>
+
+
+        <label><b>Гномы:</b></label><br>
+        <input type="radio" id="gnom" value="gnom" name="race" class="radio">
+        <label for="gnom">Гномы</label><br><br>
 
 
         <label><b>Зверо-расы:</b></label><br>
@@ -80,18 +94,15 @@
         <label><b>Орки:</b></label><br>
         <input type="radio" id="ork" value="ork" name="race" class="radio">
         <label for="ork">Хен-Сенские орки</label><br><br>
-        
-        <label><b>Гномы:</b></label><br>
-        <input type="radio" id="gnom" value="gnom" name="race" class="radio">
-        <label for="gnom">Гномы</label><br><br>
+
     </div>
 
-    <div class="block">
-        <div class="container_character">
+    <div class="block_1_2">
+        <div class="container_img">
             <div id="container_img1" class="block_character1"></div>
             <script src="Script2.js"></script>
 
-            <div class="block_character1" align="justify">
+            <div class="block_character" align="justify">
                 <div id="info_race"></div>
                 <script src="Script1.js"></script><br>
             </div>
@@ -99,7 +110,7 @@
     </div>
 
     
-    <div>
+    <div class="block_2">
         <i><b>Класс:</b></i><br>
 
         <input type="radio" id="kill" value="kill" name="class" class="radio" checked="checked">
@@ -151,8 +162,8 @@
         <label for="waman">Шаман</label><br><br>
     </div>
 
-    <div class="block">
-        <div class="container_character">
+    <div class="block_2_1">
+        <div class="container_img">
             <div id="container_img2" class="block_character1"></div>
             <script src="Script4.js"></script>
 
@@ -165,7 +176,7 @@
 
 
     <form name="my">
-        <div>
+        <div class="block_3_1">
             <label for="month">Выберите месяц для вашего персонажна (это дарует дополнительно некоторые навыки):</label><br>
             <select name="month" id="month" size="1" >
                 <option value="jan">Январь (Созвездие Горы)</option>
@@ -188,6 +199,6 @@
     </form>
 
     <script src="Script5.js"></script>
-
+</div>
 </body>
 </html>
