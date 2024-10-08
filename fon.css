@@ -3,8 +3,6 @@ margin:0;
 padding:0;
 }
 
-
-
 .block {
     height: 50px;
     margin-top: -10px;
@@ -19,7 +17,7 @@ padding:0;
 }
 
     .block .button1 {
-        background-color: rgb(0,0,0,75%);
+        background-color: rgb(109,88,23,75%);
         padding: 0;
         color: white;
         align-content: center;
@@ -44,9 +42,9 @@ padding:0;
     display: grid;
     grid-template:
         [start] "a1 a1 a1 a1" [row2]
-        [row2] "a2 a3 a3 a" [row3]
-        [row3] "a4 a5 a5 a" [row4]
-        [row4] "a7 a6 a6 a6" [row-end]/ 1fr 1fr 1fr 1fr;
+        [row2] "a2 a3 a3 a3" [row3]
+        [row3] "a4 a5 a5 a5" [row4]
+        [row4] "a8 a7 a7 a7" [row-end]/ 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
     background-color: var(--color-bg);
@@ -112,8 +110,8 @@ p {
 
 .block_1 .block_1_4 {
     position:relative;
-    /*background-color: rgb(0,0,0,75%);
-    border: 5px solid black;*/
+    background-color: rgb(0,0,0,75%);
+    border: 5px solid black;
     border-radius: 32px;
     color: white;
     grid-area: a4;
@@ -130,7 +128,7 @@ p {
         color: white;
         grid-area: a2;
         padding: 2%;
-        margin: 5%;
+        margin: 0%;
     }
     .block_1 .block_1_4 .block_1_4_2 {
         position: absolute;
@@ -142,7 +140,7 @@ p {
         color: white;
         grid-area: a2;
         padding: 2%;
-        margin: 5%;
+        margin: 0%;
     }
 
 .block_1 .block_1_5 {
@@ -161,5 +159,19 @@ p {
     border-radius: 32px;
     padding: 5%;
     color: white;
-    grid-area: a7;
+    grid-area: a8;
 }
+
+.block_1 .container_img {
+    display: grid;
+    grid-template-columns: auto  1fr;
+    padding: 0px;
+}
+
+    .block_1 .container_img .block_character1 {
+        padding: 0px;
+    }
+
+    .block_1 .container_img2 .block_character2 {
+        padding: 0px;
+    }
