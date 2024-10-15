@@ -3,181 +3,143 @@ margin:0;
 padding:0;
 }
 
-.block {
-    height: 50px;
-    margin-top: -10px;
-    margin-left: -8px;
-    margin-right: -8px;
-    display: grid;
-    grid-template:
-        [start] "a1 a2 a3 a a a a8 a8" [row-end]/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    background-color: rgb(0,0,0,75%);
-}
-
-    .block .button1 {
-        background-color: rgb(109,88,23,75%);
-        padding: 0;
-        color: white;
-        align-content: center;
-        grid-area: a1;
-        border-radius: 16px;
-        font-size: 20px;
+@media (width > 960px){
+    .block {
+        height: 50px;
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+        display: grid;
+        grid-template:
+            [start] "a1 a2 a3 a a a a8" [row-end]/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        background-color: rgb(0,0,0,75%);
     }
-    .block .button2 {
-        background-color: rgb(109,88,23,75%);
-        padding: 0;
+
+        .block .button1 {
+            background-color: rgb(243,226,190,75%);
+            padding-top: 6%;
+            margin-left: 5%;
+            color: black;
+            align-content: center;
+            grid-area: a1;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .block .button2 {
+            background-color: rgb(243,226,190,75%);
+            padding: 6%;
+            color: black;
+            align-content: center;
+            grid-area: a2;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+    .block_1 {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: grid;
+        grid-template:
+            [start] "a1 a1 a1 a1" [row2]
+            [row2] "a2 a3 a3 a3" [row3]
+            [row3] "a4 a5 a5 a5" [row4]
+            [row4] "a8 a7 a7 a7" [row-end]/ 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 20px;
+        background-color: var(--color-bg);
+        border-radius: var(--border-radius) var(--border-radius) var(--border-radius) var(--border-radius);
+    }
+
+        .block_1 .block_1_1 {
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            padding: 10px 50px;
+            color: white;
+            grid-area: a1;
+        }
+
+    p {
+        font-size: 24px;
+    }
+
+    .block_1 .block_1_2 {
+        position: relative;
+        border-radius: 16px;
         color: white;
-        align-content: center;
         grid-area: a2;
-        border-radius: 16px;
-        font-size:20px;
+        padding: 2%;
+        grid: auto auto;
+        grid-area: a2;
     }
 
-.block_1 {
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: grid;
-    grid-template:
-        [start] "a1 a1 a1 a1" [row2]
-        [row2] "a2 a3 a3 a3" [row3]
-        [row3] "a4 a5 a5 a5" [row4]
-        [row4] "a8 a7 a7 a7" [row-end]/ 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    padding: 20px;
-    background-color: var(--color-bg);
-    border-radius: var(--border-radius) var(--border-radius) var(--border-radius) var(--border-radius);
-}
+        .block_1 .block_1_2 .block_1_2_1 {
+            position: absolute;
+            top: 0px;
+            right: 52%;
+            width: 42%;
+            height: auto;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            padding-bottom: 10%;
+            padding: 3%;
+            margin-bottom: 5%;
+        }
 
-.block_1 .block_1_1
-{
-    background-color: rgb(0,0,0,75%);/*
-    border: 5px solid black;*/
-    border-radius: 16px;
-    padding:10px 50px;
-    color: white;
-    grid-area:a1;
-}
+        .block_1 .block_1_2 .block_1_2_2 {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            width: 43%;
+            height: auto;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            padding: 3%;
+            margin-bottom: 5%;
+        }
 
-p {
-    font-size: 24px;
-}
-
-.block_1 .block_1_2 {
-    position:relative;
-    /*background-color: rgb(0,0,0,75%);*/
-    /*border: 5px solid black;*/
-    border-radius: 16px;
-    color: white;
-    grid-area:a2;
-    padding:2%;
-    grid:auto auto;
-    grid-area: a2;
-}
-
-    .block_1 .block_1_2 .block_1_2_1 {
-        position:absolute;
-        top:0px;
-        right:51%;
-        width:42%;
-        height:auto;
+    .block_1 .block_1_3 {
         background-color: rgb(0,0,0,75%);
         border-radius: 16px;
         color: white;
-        padding-bottom:10%;
-        padding: 3%;
-        margin-bottom:5%;
+        grid-area: a3;
+        padding: 2%;
     }
-    .block_1 .block_1_2 .block_1_2_2 {
-        position: absolute;
-        top: 0px;
-        left: 49%;
-        width:43%;
-        height:auto;
+
+    .block_1 .block_1_4 {
         background-color: rgb(0,0,0,75%);
         border-radius: 16px;
         color: white;
-        padding: 3%;
-        margin-bottom:5%;
+        grid-area: a4;
+        padding: 2%;
+        padding-left: 10%;
+        padding-top: 5%;
     }
 
-.block_1 .block_1_3 {
-    background-color: rgb(0,0,0,75%);
-    /*border: 5px solid black;*/
-    border-radius: 16px;
-    color: white;
-    grid-area: a3;
-    padding: 2%;
-}
-
-.block_1 .block_1_4 {
-    background-color: rgb(0,0,0,75%);
-    /*border: 5px solid black;*/
-    border-radius: 16px;
-    color: white;
-    grid-area: a4;
-    padding:2%;
-    padding-left:10%;
-    padding-top:5%;
-}
-
-.block_1 .block_1_5 {
-    background-color: rgb(0,0,0,75%);
-    border-radius: 16px;
-    padding: 2%;
-    color: white;
-    grid-area: a5;
-    padding:4%;
-    padding-top:4%;
-}
-
-.block_1 .block_1_6 {
-    background-color: rgb(0,0,0,75%);
-    border-radius: 16px;
-    padding: 10%;
-    color: white;
-    grid-area: a8;
-    position:relative;
-}
-
-    .block_1 .block_1_6 select {
-        background-color: #0563af;
+    .block_1 .block_1_5 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        padding: 2%;
         color: white;
-        padding: 12px;
-        width: 250px;
-        border: none;
-        font-size: 20px;
-        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-        -webkit-appearance: button;
-        appearance: button;
-        outline: none;
+        grid-area: a5;
+        padding: 4%;
+        padding-top: 4%;
     }
 
-    .block_1 .block_1_6::before {
-        content: "\f13a";
-        font-family: FontAwesome;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 20%;
-        height: 100%;
-        text-align: center;
-        font-size: 28px;
-        line-height: 45px;
-        color: rgba(255, 255, 255, 0.5);
-        background-color: rgba(255, 255, 255, 0.1);
-        pointer-events: none;
-    }
-
-    .block_1 .block_1_6:hover::before {
-        color: rgba(255, 255, 255, 0.6);
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .block_1 .block_1_6 select option {
-        padding: 30px;
+    .block_1 .block_1_6 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        padding: 5%;
+        color: white;
+        grid-area: a8;
+        position: relative;
     }
 
 
@@ -188,10 +150,332 @@ p {
         gap: 20px;
     }
 
-    .block_1 .container_img .block_character1 {
-        padding: 0px;
-    }
+        .block_1 .container_img .block_character1 {
+            padding: 0px;
+        }
 
     .block_1 .container_img2 .block_character2 {
         padding: 0px;
     }
+}
+
+
+
+@media (width <= 960px) and (width>=600px) {
+    .block {
+        height: 50px;
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+        display: grid;
+        grid-template:
+            [start] "a1 a2 a3" [row-end]/ 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        background-color: rgb(0,0,0,75%);
+    }
+
+        .block .button1 {
+            background-color: rgb(243,226,190,75%);
+            padding-top: 6%;
+            margin-left: 5%;
+            color: black;
+            align-content: center;
+            grid-area: a1;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .block .button2 {
+            background-color: rgb(243,226,190,75%);
+            padding: 6%;
+            color: black;
+            align-content: center;
+            grid-area: a2;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+    .block_1 {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: grid;
+        grid-template:
+            [start] "a1 a1 a1" [row2]
+            [row2] "a2 a3 a3" [row3]
+            [row3] "a4 a5 a5" [row4]
+            [row4] "a6 a7 a7" [row5]
+            [row5] "a8 a9 a9" [row-end]/ 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 20px;
+        background-color: var(--color-bg);
+        border-radius: var(--border-radius) var(--border-radius) var(--border-radius) var(--border-radius);
+    }
+
+        .block_1 .block_1_1 {
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            padding: 10px 50px;
+            color: white;
+            grid-area: a1;
+        }
+
+    p {
+        font-size: 24px;
+    }
+
+    .block_1 .block_1_2 {
+        position: relative;
+        border-radius: 16px;
+        color: white;
+        grid-area: a2;
+        padding: 2%;
+        grid: auto auto;
+        grid-area: a2;
+    }
+
+        .block_1 .block_1_2 .block_1_2_1 {
+            position: absolute;
+            top: 0px;
+            right: 52%;
+            width: 42%;
+            height: auto;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            padding-bottom: 10%;
+            padding: 3%;
+            margin-bottom: 5%;
+        }
+
+        .block_1 .block_1_2 .block_1_2_2 {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            width: 43%;
+            height: auto;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            padding: 3%;
+            margin-bottom: 5%;
+        }
+
+    .block_1 .block_1_3 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        color: white;
+        grid-area: a3;
+        padding: 5%;
+    }
+
+    .block_1 .block_1_4 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        color: white;
+        grid-area: a4;
+        padding: 2%;
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+
+    .block_1 .block_1_5 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        padding: 2%;
+        color: white;
+        grid-area: a5;
+        padding: 4%;
+        padding-top: 4%;
+    }
+
+    .block_1 .block_1_6 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        padding: 5%;
+        color: white;
+        grid-area: a6;
+        position: relative;
+    }
+
+
+    .block_1 .container_img {
+        display: grid;
+        grid-template-rows: auto ;
+        padding: 0px;
+        gap: 20px;
+    }
+
+        .block_1 .container_img .block_character1 {
+            padding: 0px;
+        }
+
+    .block_1 .container_img2 .block_character2 {
+        padding: 0px;
+    }
+}
+
+
+
+@media (width < 600px) {
+    .block {
+        height: 50px;
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: -300px;
+        display: grid;
+        grid-template:
+            [start] "a1 a2" [row-end]/ 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        background-color: rgb(0,0,0,75%);
+    }
+
+        .block .button1 {
+            background-color: rgb(243,226,190,75%);
+            padding: 4%;
+            margin-bottom:3.5%;
+            margin-left: 5%;
+            color: black;
+            align-content: center;
+            grid-area: a1;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .block .button2 {
+            background-color: rgb(243,226,190,75%);
+            padding: 4%;
+            margin-bottom:3.5%;
+            color: black;
+            align-content: center;
+            grid-area: a2;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+    .block_1 {
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: grid;
+        grid-template: 
+            [start] "a1" [row2]
+            [row2] "a2" [row3]
+            [row3] "a3" [row4]
+            [row4] "a4" [row5]
+            [row5] "a5" [row6]
+            [row6] "a6" [row-end]/ 1fr;
+        gap: 10px;
+        padding: 20px;
+        background-color: var(--color-bg);
+        border-radius: var(--border-radius) var(--border-radius) var(--border-radius) var(--border-radius);
+    }
+
+        .block_1 .block_1_1 {
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            padding: 10px 50px;
+            grid-area: a1;
+            color: white;
+        }
+
+    p {
+        font-size: 24px;
+    }
+
+    .block_1 .block_1_2 {
+        position: relative;
+        border-radius: 16px;
+        color: white;
+        padding: 2%;
+        grid-area:a2;
+        display:grid;
+        grid-template-columns: auto auto;
+    }
+
+        .block_1 .block_1_2 .block_1_2_1 {
+            position: absolute;
+            top: 27px;
+            right: 52%;
+            width: 42%;
+            height: auto;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            padding-bottom: 10%;
+            padding: 3%;
+            margin-bottom: -5%;
+        }
+
+        .block_1 .block_1_2 .block_1_2_2 {
+            position: absolute;
+            top: 27px;
+            left: 50%;
+            width: 43%;
+            height: auto;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            padding: 3%;
+            margin-bottom: 5%;
+        }
+
+    .block_1 .block_1_3 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        color: white;
+        padding: 5%;
+        grid-area: a3;
+    }
+
+    .block_1 .block_1_4 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        color: white;
+        padding: 2%;
+        padding-left: 10%;
+        padding-top: 5%;
+        grid-area: a4;
+    }
+
+    .block_1 .block_1_5 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        padding: 2%;
+        color: white;
+        padding: 4%;
+        padding-top: 4%;
+        grid-area: a5;
+    }
+
+    .block_1 .block_1_6 {
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        padding: 5%;
+        color: white;
+        position: relative;
+        grid-area: a6;
+    }
+
+
+    .block_1 .container_img {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        padding: 0px;
+        gap: 20px;
+    }
+
+        .block_1 .container_img .block_character1 {
+            padding: 0px;
+        }
+
+    .block_1 .container_img2 .block_character2 {
+        padding: 0px;
+    }
+}

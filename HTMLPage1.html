@@ -11,10 +11,10 @@
 </head>
 <body>
 <div class="block">
-    <a href="Main.html" target="_blank" class="button1" align="center">
+    <a href="map.html" target="_blank" class="button1" align="center" text-decoration="none">
         Карта мира 
     </a>
-    <a href="Main.html" target="_blank" class="button2" align="center">
+    <a href="history.html" target="_blank" class="button2" align="center">
         История мира
     </a>
 </div>
@@ -123,8 +123,7 @@
     </div>
 
 
-    <div class="block_1_4">        
-        <div class="block_1_4_1">
+    <div class="block_1_4">
 
             <i><b>Класс:</b></i><br>
             <input type="radio" id="kill" value="kill" name="class" class="radio" checked="checked">
@@ -150,10 +149,7 @@
 
             <input type="radio" id="kler" value="kler" name="class" class="radio">
             <label for="kler">Клерик</label><br>
-        </div>
 
-
-        <div class="block_1_4_2">
             <input type="radio" id="magic" value="magic" name="class" class="radio">
             <label for="magic">Колдун</label><br>
 
@@ -177,7 +173,7 @@
 
             <input type="radio" id="waman" value="waman" name="class" class="radio">
             <label for="waman">Шаман</label><br><br>
-        </div>
+        
     </div>
 
     <div class="block_1_5">
@@ -193,25 +189,27 @@
     </div>
 
     <form name="my">
-        <div class="block_1_6">
-            <label for="month">Выберите месяц для вашего персонажна (это дарует дополнительно некоторые навыки):</label><br>
-            <select name="month" id="month" size="1">
-                <option value="jan">Январь (Созвездие Горы)</option>
-                <option value="febr">Февраль (Созвездие Фермера)</option>
-                <option value="march">Март (Созвездие Волка)</option>
-                <option value="apr">Апрель (Созвездие Колеса)</option>
-                <option value="may">Май (Созвездие Арфы)</option>
-                <option value="jun">Июнь (Созвездие Топора)</option>
-                <option value="jul">Июль (Созвездие Книги)</option>
-                <option value="aug">Август (Созвездие Стрелы)</option>
-                <option value="sept">Сентябрь (Созвездие Шута)</option>
-                <option value="oct">Октябрь (Созвездие Башни)</option>
-                <option value="nov">Ноябрь (Созвездие Короля)</option>
-                <option value="dec">Декабрь (Созвездие Орла)</option>
-            </select>
-
-            <div id="container_text_month"></div>
-
+        <div class="block_1_6" align="justify">
+            <div class="block_1_6_opt">
+                <label for="month" align="center">Выберите месяц для вашего персонажна (это дарует дополнительно некоторые навыки):</label><br>
+                <select name="month" id="month" size="1" class="sort-options">
+                    <option value="jan">Январь (Созвездие Горы)</option>
+                    <option value="febr">Февраль (Созвездие Фермера)</option>
+                    <option value="march">Март (Созвездие Волка)</option>
+                    <option value="apr">Апрель (Созвездие Колеса)</option>
+                    <option value="may">Май (Созвездие Арфы)</option>
+                    <option value="jun">Июнь (Созвездие Топора)</option>
+                    <option value="jul">Июль (Созвездие Книги)</option>
+                    <option value="aug">Август (Созвездие Стрелы)</option>
+                    <option value="sept">Сентябрь (Созвездие Шута)</option>
+                    <option value="oct">Октябрь (Созвездие Башни)</option>
+                    <option value="nov">Ноябрь (Созвездие Короля)</option>
+                    <option value="dec">Декабрь (Созвездие Орла)</option>
+                </select>
+                
+                <div id="container_text_month"></div>
+                
+            </div>
         </div>
     </form>
 
