@@ -15,7 +15,8 @@ select {
     background: url("images/frame.svg") 95%/12% no-repeat rgb(243,226,190,75%)  ; 
     border: 1px solid #aaa; 
     border-radius:4px;
-    padding: 5px; 
+    padding-left: -100px; 
+    padding-right:10%;
     width: auto;
     font-size: 14px; 
     color: black; 
@@ -23,13 +24,15 @@ select {
     margin:2%;
 }
 
-    
+
     select:hover::before {
-        opacity: 0; 
+        opacity: 0;
+        width: auto;
     }
 
-    
+
     select option {
+        width: auto;
         background: rgb(243,226,190,75%);
-        color: black; 
+        color: black;
     }

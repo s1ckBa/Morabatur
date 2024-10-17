@@ -481,7 +481,7 @@ padding:0;
         height: 120px;
         margin-top: -10px;
         margin-left: auto;
-        margin-right: -10px;
+        margin-right: -20px;
         display: grid;
         grid-template-rows: 1fr;
         gap: 20px;
@@ -514,8 +514,8 @@ padding:0;
 
     .block_1 {
         margin-top: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         display: grid;
         grid-template:
             [start] "a1" [row2]
@@ -536,6 +536,8 @@ padding:0;
             padding: 10px 50px;
             grid-area: a1;
             color: white;
+            margin-right: -5%;
+            margin-left: -5%;
         }
 
     p {
@@ -546,9 +548,11 @@ padding:0;
         border-radius: 16px;
         color: white;
         padding: 2%;
+        margin-right: -5%;
+        margin-left: -5%;
         grid-area: a2;
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
         .block_1 .block_1_2 .block_1_2_1 {
@@ -582,8 +586,9 @@ padding:0;
         border-radius: 16px;
         color: white;
         padding: 7%;
-        margin-top:0%;
-        
+        margin-top: 0%;
+        margin-right: -5%;
+        margin-left: -5%;
     }
 
     .block_1 .block_1_4 {
@@ -594,6 +599,8 @@ padding:0;
         padding-left: 10%;
         padding-top: 5%;
         grid-area: a4;
+        margin-right: -5%;
+        margin-left: -5%;
     }
 
     .block_1 .block_1_5 {
@@ -604,6 +611,8 @@ padding:0;
         padding: 7%;
         padding-top: 4%;
         grid-area: a5;
+        margin-right: -5%;
+        margin-left: -5%;
     }
 
     .block_1 .block_1_6 {
@@ -613,6 +622,8 @@ padding:0;
         color: white;
         position: relative;
         grid-area: a6;
+        margin-right: -5%;
+        margin-left: -5%;
     }
 
 
