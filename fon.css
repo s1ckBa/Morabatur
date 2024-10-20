@@ -12,7 +12,7 @@ padding:0;
         display: grid;
         grid-template:
             [start] "a1 a2 a3 a a a a8" [row-end]/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 20px;
+        gap: 10px;
         padding: 20px;
         background-color: rgb(0,0,0,75%);
     }
@@ -161,7 +161,7 @@ padding:0;
 
 
 
-/*@media screen and (width <= 1100px) and (width>=800px) {
+@media screen and (width <= 1100px) and (width>=800px) {
     .block {
         height: 50px;
         margin-top: -10px;
@@ -207,8 +207,7 @@ padding:0;
             [start] "a1 a1 a1" [row2]
             [row2] "a2 a3 a3" [row3]
             [row3] "a4 a5 a5" [row4]
-            [row4] "a6 a7 a7" [row5]
-            [row5] "a8 a9 a9" [row-end]/ 1fr 1fr 1fr;
+            [row4] "a6 a7 a7" [row-end]/ 1fr 1fr 1fr;
         gap: 30px;
         padding: 20px;
         background-color: var(--color-bg);
@@ -316,16 +315,16 @@ padding:0;
     .block_1 .container_img2 .block_character2 {
         padding: 0px;
     }
-}*/
+}
 
 
 
-@media screen and (max-width: 1100px) and (min-width: 400px) {
+@media screen and (max-width: 800px) and (min-width: 400px) {
     .block {
         height: 50px;
         margin-top: -10px;
-        margin-left: auto;
-        margin-right: 0px;
+        margin-left: -10px;
+        margin-right: -10px;
         display: grid;
         grid-template:
             [start] "a1 a2" [row-end]/ 1fr 1fr;
@@ -361,16 +360,14 @@ padding:0;
 
     .block_1 {
         margin-top: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         display: grid;
         grid-template: 
-            [start] "a1" [row2]
-            [row2] "a2" [row3]
-            [row3] "a3" [row4]
-            [row4] "a4" [row5]
-            [row5] "a5" [row6]
-            [row6] "a6" [row-end]/ 1fr;
+            [start] "a1 a1" [row2]
+            [row2] "a2 a3" [row3]
+            [row3] "a4 a5" [row4]
+            [row4] "a6 a7" [row-end]/ 1fr 1fr;
         gap: 10px;
         padding: 20px;
         background-color: var(--color-bg);
@@ -383,6 +380,8 @@ padding:0;
             padding: 10px 50px;
             grid-area: a1;
             color: white;
+            margin-right: -2%;
+            margin-left: -2%;
         }
 
     p {
@@ -393,6 +392,8 @@ padding:0;
         border-radius: 16px;
         color: white;
         padding: 2%;
+        margin-right: 5%;
+        margin-left: -5%;
         grid-area: a2;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -400,7 +401,7 @@ padding:0;
 
         .block_1 .block_1_2 .block_1_2_1 {
             width: 90%;
-            height: 89%;
+            height: 60%;
             background-color: rgb(0,0,0,75%);
             border-radius: 16px;
             color: white;
@@ -411,7 +412,7 @@ padding:0;
 
         .block_1 .block_1_2 .block_1_2_2 {
             width: auto;
-            height: auto;
+            height: 60%;
             background-color: rgb(0,0,0,75%);
             border-radius: 16px;
             color: white;
@@ -424,14 +425,17 @@ padding:0;
         background-color: rgb(0,0,0,75%);
         border-radius: 16px;
         color: white;
-        padding: 7%;
+        padding: 5%;
         margin-top: 0%;
+        margin-right: -5%;
+        margin-left: -5%;
     }
 
     .block_1 .block_1_4 {
         background-color: rgb(0,0,0,75%);
         border-radius: 16px;
         color: white;
+        width:80%;
         padding: 2%;
         padding-left: 10%;
         padding-top: 5%;
@@ -443,9 +447,11 @@ padding:0;
         border-radius: 16px;
         padding: 2%;
         color: white;
-        padding: 4%;
+        padding-left: 8%;
         padding-top: 4%;
         grid-area: a5;
+        margin-right: -5%;
+        margin-left: -5%;
     }
 
     .block_1 .block_1_6 {
@@ -453,7 +459,6 @@ padding:0;
         border-radius: 16px;
         padding: 5%;
         color: white;
-        position: relative;
         grid-area: a6;
     }
 
