@@ -161,7 +161,7 @@ padding:0;
 
 
 
-@media screen and (width <= 1100px) and (width>=800px) {
+@media (width <= 1100px) and (width>=760px) {
     .block {
         height: 50px;
         margin-top: -10px;
@@ -200,8 +200,8 @@ padding:0;
 
     .block_1 {
         margin-top: 10px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
         display: grid;
         grid-template:
             [start] "a1 a1 a1" [row2]
@@ -319,7 +319,7 @@ padding:0;
 
 
 
-@media screen and (max-width: 800px) and (min-width: 400px) {
+@media screen and (max-width: 760px) and (min-width: 400px) {
     .block {
         height: 50px;
         margin-top: -10px;
