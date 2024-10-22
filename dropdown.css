@@ -12,7 +12,7 @@ select {
     -webkit-appearance: none; 
     -moz-appearance: none; 
     outline: none; 
-    background: url("images/frame.svg") 95%/12% no-repeat rgb(243,226,190,75%)  ; 
+    background: url("images/drop/frame.svg") 95%/12% no-repeat rgb(243,226,190,75%)  ; 
     border: 1px solid #aaa; 
     border-radius:4px;
     padding-left: -100px; 
