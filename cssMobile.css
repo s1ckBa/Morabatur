@@ -1,4 +1,11 @@
 ﻿@media only screen and (orientation: portrait){
+    body {
+        background-image: url('images/background/backMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-position: center;
+    }
     .block {
         height: 90px;
         margin-top: -10px;
@@ -22,6 +29,7 @@
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+            margin-right: 100px;
         }
 
         .block .button2 {
@@ -34,6 +42,7 @@
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+            margin-right:100px;
         }
 
         .block .switch {
@@ -43,7 +52,7 @@
             align-content: center;
             border-radius: 16px;
             font-size: 20px;
-            margin-left: 95px;
+            margin-left: 295px;
             margin-right: 25px;
         }
 
