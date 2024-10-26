@@ -118,7 +118,6 @@
             }
 
         .block_1 .block_1_2 {
-            display: inline-block;
             border-radius: 16px;
             color: white;
             padding: 2%;
@@ -126,7 +125,7 @@
             margin-left: -5%;
             grid-area: a2;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template:[start]"a1 a2"[row-end] / 1fr 1fr;
         }
 
             .block_1 .block_1_2 .block_1_2_1 {
@@ -140,6 +139,7 @@
                 padding-bottom: 5%;
                 padding: 3%;
                 margin-bottom: -5%;
+                grid-area:a1;
             }
 
             .block_1 .block_1_2 .block_1_2_2 {
@@ -152,6 +152,7 @@
                 color: white;
                 padding: 3%;
                 margin-bottom: 5%;
+                grid-area:a2;
             }
 
         .block_1 .block_1_3 {
