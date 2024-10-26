@@ -93,8 +93,8 @@
             border-radius: 16px;
             font-size: 20px;
             padding-top: 5px;
-            margin-left: 175px;
-            margin-right: 25px;
+            margin-left: 225px;
+            margin-right: 75px;
             padding-bottom: -10px;
         }
 
@@ -138,8 +138,6 @@
             margin-right: -5%;
             margin-left: -5%;
             grid-area: a2;
-            display: grid;
-            grid-template:[start]"c1 c2"[row-end] / 1fr 1fr;
         }
 
             .block_1 .block_1_2 .block_1_2_1 {
@@ -153,7 +151,6 @@
                 padding-bottom: 5%;
                 padding: 3%;
                 margin-bottom: -5%;
-                grid-area:c1;
             }
 
             .block_1 .block_1_2 .block_1_2_2 {
@@ -166,7 +163,6 @@
                 color: white;
                 padding: 3%;
                 margin-bottom: 5%;
-                grid-area:c2;
             }
 
         .block_1 .block_1_3 {
