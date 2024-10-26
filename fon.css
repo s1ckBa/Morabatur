@@ -3,6 +3,14 @@ margin:0;
 padding:0;
 }
 
+body {
+    background-image: url('images/background/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 @media screen and (min-width: 1100px){
     .block {
         height: 50px;
@@ -18,26 +26,40 @@ padding:0;
     }
 
         .block .button1 {
+            grid-area: a1;
             background-color: rgb(243,226,190,75%);
-            padding-top: 6%;
-            margin-left: 5%;
             color: black;
             align-content: center;
-            grid-area: a1;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+            padding-top:5px;
+            padding-bottom:-25px;
         }
 
         .block .button2 {
+            grid-area: a2;
             background-color: rgb(243,226,190,75%);
-            padding: 6%;
             color: black;
             align-content: center;
-            grid-area: a2;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+            padding-top: 5px;
+            padding-bottom: -25px;
+        }
+
+        .block .switch {
+            grid-area: a8;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            padding-top: 5px;
+            margin-left: 175px;
+            margin-right: 25px;
+            padding-bottom: -10px;
         }
 
     .block_1 {
@@ -177,7 +199,8 @@ padding:0;
 
         .block .button1 {
             background-color: rgb(243,226,190,75%);
-            padding-top: 6%;
+            padding-top: 5px;
+            padding-bottom:-10px;
             margin-left: 5%;
             color: black;
             align-content: center;
@@ -189,13 +212,27 @@ padding:0;
 
         .block .button2 {
             background-color: rgb(243,226,190,75%);
-            padding: 6%;
+            padding-top: 5px;
+            padding-bottom: -10px;
             color: black;
             align-content: center;
             grid-area: a2;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+        }
+
+        .block .switch {
+            grid-area: a3;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            padding-top: 5px;
+            margin-left: 175px;
+            margin-right: 25px;
+            padding-bottom: -10px;
         }
 
     .block_1 {
@@ -319,7 +356,7 @@ padding:0;
 
 
 
-@media screen and (max-width: 760px) and (min-width: 400px) {
+@media screen and (max-width: 760px) and (min-width: 550px) {
     .block {
         height: 50px;
         margin-top: -10px;
@@ -327,7 +364,7 @@ padding:0;
         margin-right: -10px;
         display: grid;
         grid-template:
-            [start] "a1 a2" [row-end]/ 1fr 1fr;
+            [start] "a1 a2 a3" [row-end]/ 1fr 1fr 1fr;
         gap: 20px;
         padding: 20px;
         background-color: rgb(0,0,0,75%);
@@ -356,6 +393,18 @@ padding:0;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+        }
+
+        .block .switch {
+            grid-area: a3;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            padding-top: 5px;
+            margin-left: 95px;
+            margin-right: 25px;
         }
 
     .block_1 {
@@ -481,22 +530,24 @@ padding:0;
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
     .block {
-        height: 120px;
+        height: 90px;
         margin-top: -10px;
         margin-left: auto;
         margin-right: -20px;
         display: grid;
-        grid-template-rows: 1fr;
-        gap: 20px;
-        padding: 20px;
+        grid-template:
+            [start] "a1 a3" [row2]
+            [row2] "a2 a4" [row-end] / 1fr 1fr;
+        gap: 15px;
+        padding: 25px;
         background-color: rgb(0,0,0,75%);
     }
 
         .block .button1 {
             background-color: rgb(243,226,190,75%);
-            padding: 4%;
+            padding-top: 2px;
             margin-left: 5%;
             color: black;
             align-content: center;
@@ -507,7 +558,7 @@ padding:0;
 
         .block .button2 {
             background-color: rgb(243,226,190,75%);
-            padding: 4%;
+            padding: 2%;
             margin-bottom: 3.5%;
             margin-left: 5%;
             color: black;
@@ -515,6 +566,17 @@ padding:0;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+        }
+
+        .block .switch {
+            grid-area: a3;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            margin-left: 95px;
+            margin-right: 25px;
         }
 
     .block_1 {

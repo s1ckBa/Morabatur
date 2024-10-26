@@ -47,7 +47,7 @@
     }
 }*/
 
-@media only screen {
+@media only screen and (max-width:1080px) {
     .block {
         display: inline-block;
         height: 120px;
