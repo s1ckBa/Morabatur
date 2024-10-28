@@ -1,4 +1,4 @@
-﻿@media only screen and (orientation: portrait){
+﻿@media only screen and (orientation: portrait) and (min-width:390px){
     body {
         background-image: url('images/background/backMobile.jpg');
         background-repeat: no-repeat;
@@ -13,8 +13,8 @@
         margin-right: -20px;
         display: grid;
         grid-template:
-            [start] "a1 a3" [row2]
-            [row2] "a2 a4" [row-end] / 1fr 1fr;
+            [start] "c1 c3" [row2]
+            [row2] "c2 c4" [row-end] / 1fr 1fr;
         gap: 15px;
         padding: 25px;
         background-color: rgb(0,0,0,75%);
@@ -30,6 +30,7 @@
             font-size: 20px;
             text-decoration: none;
             margin-right: 100px;
+            grid-area:c1;
         }
 
         .block .button2 {
@@ -43,10 +44,11 @@
             font-size: 20px;
             text-decoration: none;
             margin-right:100px;
+            grid-area:c2;
         }
 
         .block .switch {
-            grid-area: a3;
+            grid-area: c3;
             background-color: rgb(243,226,190,75%);
             color: black;
             align-content: center;
