@@ -26,7 +26,7 @@
             margin-left: 5%;
             color: black;
             align-content: center;
-            border-radius: 16px;
+            border-radius: 0px;
             font-size: 20px;
             text-decoration: none;
             margin-right: 100px;
@@ -69,7 +69,7 @@
             [row3] "a3" [row4]
             [row4] "a4" [row5]
             [row5] "a5" [row6]
-            [row6] "a6" [row-end]/ 1fr;
+            [row6] "a6" [row-end]/ auto;
         gap: 10px;
         padding: 20px;
         background-color: var(--color-bg);
