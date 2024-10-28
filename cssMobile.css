@@ -36,7 +36,7 @@
         .block .button2 {
             background-color: rgb(243,226,190,75%);
             padding: 2%;
-            margin-bottom: 3.5%;
+            margin-bottom: -3.5%;
             margin-left: 5%;
             color: black;
             align-content: center;
