@@ -1,4 +1,4 @@
-﻿@media only screen and (orientation: portrait) and (max-width:600px){
+﻿@media only screen and (orientation: portrait) and (min-width:420px){
     body {
         background-image: url('images/background/backMobile.jpg');
         background-repeat: no-repeat;
@@ -14,7 +14,7 @@
         display: grid;
         grid-template:
             [start] "c1 c3" [row2]
-            [row2] "c2 c4" [row-end] / 1fr 1fr;
+            [row2] "c2 c4" [row-end] / auto auto;
         gap: 15px;
         padding: 25px;
         background-color: rgb(0,0,0,75%);
@@ -26,10 +26,10 @@
             margin-left: 5%;
             color: black;
             align-content: center;
-            border-radius: 0px;
+            border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
-            margin-right: 100px;
+            margin-right: auto;
             grid-area:c1;
         }
 
@@ -54,7 +54,7 @@
             align-content: center;
             border-radius: 16px;
             font-size: 20px;
-            margin-left: 295px;
+            margin-left: 25px;
             margin-right: 25px;
         }
 
