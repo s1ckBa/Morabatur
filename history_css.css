@@ -1,6 +1,13 @@
-﻿body
-{
-
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('images/background/book_back.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .block_hist {
@@ -24,7 +31,7 @@
         border-radius: 16px;
         font-size: 20px;
         text-decoration: none;
-        padding-top: 10px;
+        padding-top: 5px;
         padding-bottom: -25px;
     }
 
@@ -37,7 +44,7 @@
         font-size: 20px;
         text-decoration: none;
         padding: 7px;
-        padding-top:10px;
+        padding-top: 7px;
     }
 
     .block_hist .switch {
@@ -62,26 +69,29 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-        .container1 .heading {
-            background-color: rgb(0,0,0,75%);
-            margin-left: 35%;
-            margin-top: 20px;
-            border-radius: 16px;
-            height: 100px;
-            width: 400px;
-            grid-area: a1;
-        }
-        .container1 .heading h1 {
 
+    .container1 .heading {
+        background-color: rgb(0,0,0,75%);
+        margin-left: 35%;
+        margin-top: 20px;
+        border-radius: 16px;
+        height: 100px;
+        width: 400px;
+        grid-area: a1;
+    }
+
+        .container1 .heading h1 {
             padding-top: 5px;
             color: white;
         }
 
-        .container1 .intro {
-            font-size:18px;
-            background-color: rgb(0,0,0,75%);
-            border-radius: 16px;
-            color: white;
-            grid-area: a2;
-            padding:5px;
-        }
+    .container1 .intro {
+        font-size: 18px;
+        background-color: rgb(0,0,0,75%);
+        border-radius: 16px;
+        color: white;
+        grid-area: a2;
+        padding: 5px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
