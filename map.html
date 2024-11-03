@@ -3,11 +3,41 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
     <title></title>
+    <link rel="stylesheet" href="map_css.css">
+    <link rel="stylesheet" href="check.css">
 </head>
 <body>
-    <H1 align="center">HELLO!</H1>
-    Здесь изобржена карта мира Морабатур. Нажав на любое из государств, вам будет выдана вся информация по этому государтсву.
-    <a href="images/background/background.img"></a>
+    <div class="block_map">
+        <a href="map.html" target="_blank" class="button1" align="center" text-decoration="none">
+            Лист персонажа
+        </a>
+        <a href="history.html" target="_blank" class="button2" align="center">
+            История мира
+        </a>
+        <div class="switch">
+            <table width="65%" border="0">
+                <tr>
+                    <td align="center">Тема</td>
+                    <td align="center">
+                        <input type="checkbox" id="toggleCheckbox" class="Checkbox">
+                        <label for="toggleCheckbox"></label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="block_info">
+
+        <div class="block_info1" align="justify">
+        Здесь изобржена карта мира Морабатур. 
+        Нажав на любое из государств, 
+        вам будет выдана вся информация по этому государтсву.
+        </div>
+
+        <div class="block_map"></div>
+        <div class="block_text"></div>
+    </div>
 </body>
 </html>
