@@ -1,0 +1,104 @@
+﻿@media only screen and (orientation: portrait) and (max-width:768px) {
+    body {
+        background-image: url('images/background/backMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .block_map {
+        height: 50px;
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+        display: grid;
+        grid-template:
+            [start] "c1 c3" [row2]
+            [row2] "c2 c4" [row-end] / auto auto;
+        gap: 15px;
+        padding: 20px;
+        background-color: rgb(0,0,0,75%);
+    }
+
+        .block_map .button1 {
+            grid-area: с1;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding-top: 5px;
+            padding-bottom: -25px;
+        }
+
+        .block_map .button2 {
+            grid-area: с2;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 7px;
+            padding-top: 7px;
+        }
+
+        .block_map .switch {
+            grid-area: с3;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            padding-top: 5px;
+            margin-left: 175px;
+            margin-right: 25px;
+            padding-bottom: -10px;
+        }
+
+    .block_info {
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-template:
+            [start]"a1"[row2]
+            [row2]"a3"[row3]
+            [row3]"a3"[row-end] / 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+        .block_info .block_info1 {
+            padding: 5px;
+            padding-top: 10px;
+            background-color: rgb(0,0,0,75%);
+            color: white;
+            border-radius: 16px;
+            font-size: 20px;
+            grid-area: a1;
+        }
+
+        .block_info .block_text {
+            background-color: rgb(0,0,0,75%);
+            color: white;
+            border-radius: 16px;
+            font-size: 20px;
+            grid-area: a3;
+        }
+
+        .block_info .block_map {
+            margin-left: 20px;
+            padding: 5px;
+            background-image: url("images/background/background.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            width: 550px;
+            height: 550px;
+            border: 3px solid black;
+            border-radius: 16px;
+            grid-area: a2;
+        }
+}

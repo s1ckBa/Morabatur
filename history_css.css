@@ -10,88 +10,355 @@ body {
     background-position: center;
 }
 
-.block_hist {
-    height: 50px;
-    margin-top: -10px;
-    margin-left: -8px;
-    margin-right: -8px;
-    display: grid;
-    grid-template:
-        [start] "a1 a2 a3 a a a a8" [row-end]/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 20px;
-    background-color: rgb(0,0,0,75%);
-}
-
-    .block_hist .button1 {
-        grid-area: a1;
-        background-color: rgb(243,226,190,75%);
-        color: black;
-        align-content: center;
-        border-radius: 16px;
-        font-size: 20px;
-        text-decoration: none;
-        padding-top: 5px;
-        padding-bottom: -25px;
-    }
-
-    .block_hist .button2 {
-        grid-area: a2;
-        background-color: rgb(243,226,190,75%);
-        color: black;
-        align-content: center;
-        border-radius: 16px;
-        font-size: 20px;
-        text-decoration: none;
-        padding: 7px;
-        padding-top: 7px;
-    }
-
-    .block_hist .switch {
-        grid-area: a8;
-        background-color: rgb(243,226,190,75%);
-        color: black;
-        align-content: center;
-        border-radius: 16px;
-        font-size: 20px;
-        padding-top: 5px;
-        margin-left: 175px;
-        margin-right: 25px;
-        padding-bottom: -10px;
-    }
-
-.container1 {
-    display: grid;
-    grid-template:
-        [start] "a1" [row2]
-        [row2] "a2" [row-end]/ 1fr;
-    gap: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-    .container1 .heading {
+@media (min-width: 1100px) {
+    .block_hist {
+        height: 50px;
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+        display: grid;
+        grid-template:
+            [start] "a1 a2 a3 a a a a8" [row-end]/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
         background-color: rgb(0,0,0,75%);
-        margin-left: 35%;
-        margin-top: 20px;
-        border-radius: 16px;
-        height: 100px;
-        width: 400px;
-        grid-area: a1;
     }
 
-        .container1 .heading h1 {
+        .block_hist .button1 {
+            grid-area: a1;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
             padding-top: 5px;
-            color: white;
+            padding-bottom: -25px;
         }
 
-    .container1 .intro {
-        font-size: 18px;
-        background-color: rgb(0,0,0,75%);
-        border-radius: 16px;
-        color: white;
-        grid-area: a2;
-        padding: 5px;
-        margin-left: 50px;
-        margin-right: 50px;
+        .block_hist .button2 {
+            grid-area: a2;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 7px;
+            padding-top: 7px;
+        }
+
+        .block_hist .switch {
+            grid-area: a8;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            padding-top: 5px;
+            margin-left: 175px;
+            margin-right: 25px;
+            padding-bottom: -10px;
+        }
+
+    .container1 {
+        display: grid;
+        grid-template:
+            [start] "a1" [row2]
+            [row2] "a2" [row-end]/ 1fr;
+        gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+        .container1 .heading {
+            background-color: rgb(0,0,0,75%);
+            margin-left: 35%;
+            margin-top: 20px;
+            border-radius: 16px;
+            height: 70px;
+            width: 400px;
+            grid-area: a1;
+        }
+
+            .container1 .heading h1 {
+                padding-top: 5px;
+                color: white;
+            }
+
+        .container1 .intro {
+            font-size: 18px;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            grid-area: a2;
+            padding: 5px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+}
+@media (width <= 1100px) and (width>=760px) {
+    .block_hist {
+        height: 50px;
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+        display: grid;
+        grid-template:
+            [start] "a1 a2 a8" [row-end]/ 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
+        background-color: rgb(0,0,0,75%);
+    }
+
+        .block_hist .button1 {
+            grid-area: a1;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding-top: 5px;
+            padding-bottom: -25px;
+        }
+
+        .block_hist .button2 {
+            grid-area: a2;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 7px;
+            padding-top: 7px;
+        }
+
+        .block_hist .switch {
+            grid-area: a8;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            padding-top: 5px;
+            margin-left: 175px;
+            margin-right: 25px;
+            padding-bottom: -10px;
+        }
+
+    .container1 {
+        display: grid;
+        grid-template:
+            [start] "a1" [row2]
+            [row2] "a2" [row-end]/ 1fr;
+        gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+        .container1 .heading {
+            background-color: rgb(0,0,0,75%);
+            margin-left: 25%;
+            margin-right: 30%;
+            margin-top: 20px;
+            border-radius: 16px;
+            height: 70px;
+            width: 400px;
+            grid-area: a1;
+        }
+
+            .container1 .heading h1 {
+                padding-top: 5px;
+                color: white;
+            }
+
+        .container1 .intro {
+            font-size: 18px;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            grid-area: a2;
+            padding: 5px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+}
+
+@media (max-width: 760px) and (min-width: 550px) {
+    .block_hist {
+        height: 50px;
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+        display: grid;
+        grid-template:
+            [start] "a1 a2 a8" [row-end]/ 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
+        background-color: rgb(0,0,0,75%);
+    }
+
+        .block_hist .button1 {
+            grid-area: a1;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding-top: 15px;
+            padding-bottom: -25px;
+        }
+
+        .block_hist .button2 {
+            grid-area: a2;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 5px;
+            padding-top: 7px;
+        }
+
+        .block_hist .switch {
+            grid-area: a8;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            padding-top: 15px;
+            margin-left: 175px;
+            margin-right: 25px;
+            padding-bottom: -10px;
+        }
+
+    .container1 {
+        display: grid;
+        grid-template:
+            [start] "a1" [row2]
+            [row2] "a2" [row-end]/ 1fr;
+        gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+        .container1 .heading {
+            background-color: rgb(0,0,0,75%);
+            margin-left: 17%;
+            margin-top: 20px;
+            border-radius: 16px;
+            height: 70px;
+            width: 400px;
+            grid-area: a1;
+        }
+
+            .container1 .heading h1 {
+                padding-top: 5px;
+                color: white;
+            }
+
+        .container1 .intro {
+            font-size: 18px;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            grid-area: a2;
+            padding: 5px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+}
+
+@media (max-width: 550px) {
+    .block_hist {
+        height: 80px;
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+        display: grid;
+        grid-template:
+            [start] "c1 c3" [row2]
+            [row2] "c2 c4" [row-end] / auto auto;
+        gap: 15px;
+        padding: 20px;
+        background-color: rgb(0,0,0,75%);
+    }
+
+        .block_hist .button1 {
+            grid-area: c1;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding-top: 5px;
+            padding-bottom: -25px;
+        }
+
+        .block_hist .button2 {
+            grid-area: c2;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 7px;
+            padding-top: 7px;
+        }
+
+        .block_hist .switch {
+            grid-area: c3;
+            background-color: rgb(243,226,190,75%);
+            color: black;
+            align-content: center;
+            border-radius: 16px;
+            font-size: 20px;
+            padding-top: 0px;
+            margin-left: 175px;
+            margin-right: 25px;
+            padding-bottom: -10px;
+        }
+
+    .container1 {
+        display: grid;
+        grid-template:
+            [start] "a1" [row2]
+            [row2] "a2" [row-end]/ 1fr;
+        gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+        .container1 .heading {
+            background-color: rgb(0,0,0,75%);
+            margin-left: 50px;
+            margin-top: 20px;
+            border-radius: 16px;
+            height: 70px;
+            width: 385px;
+            grid-area: a1;
+        }
+
+            .container1 .heading h1 {
+                padding-top: 15px;
+                color: white;
+            }
+
+        .container1 .intro {
+            font-size: 18px;
+            background-color: rgb(0,0,0,75%);
+            border-radius: 16px;
+            color: white;
+            grid-area: a2;
+            padding: 5px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+}
