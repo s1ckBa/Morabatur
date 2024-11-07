@@ -66,7 +66,7 @@
         grid-template:
             [start]"a1"[row2]
             [row2]"a3"[row3]
-            [row3]"a3"[row-end] / 1fr 1fr 1fr;
+            [row3]"a3"[row-end] / 1fr;
         gap: 20px;
     }
 
