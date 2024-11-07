@@ -7,10 +7,10 @@
         background-position: center;
     }
     .block_hist {
-        height: 50px;
+        height: 70px;
         margin-top: -10px;
         margin-left: -8px;
-        margin-right: -8px;
+        margin-right: -80px;
         display: grid;
         grid-template:
             [start] "c1 c3" [row2]
