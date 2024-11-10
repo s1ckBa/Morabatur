@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('images/background/background3.jpg');
+    background-image: url('images/background/map.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -33,7 +33,7 @@ body {
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
-            padding-top: 5px;
+            padding-top: 0px;
             padding-bottom: -25px;
         }
 
@@ -62,7 +62,7 @@ body {
             padding-bottom: -10px;
         }
 
-    .block_info {
+    .container {
         margin-top: 20px;
         margin-left: 100px;
         margin-right: 100px;
@@ -77,7 +77,7 @@ body {
         gap: 20px;
     }
 
-        .block_info .block_info1 {
+        .container .block_info {
             padding: 5px;
             padding-top: 10px;
             margin-bottom: 300px;
@@ -88,7 +88,7 @@ body {
             grid-area: a1;
         }
 
-        .block_info .block_text {
+        .container .block_text {
             background-color: rgb(0,0,0,75%);
             color: white;
             margin-top: -300px;
@@ -97,7 +97,7 @@ body {
             grid-area: a3;
         }
 
-        .block_info .block_map {
+        .container .block_m {
             margin-left: 20px;
             padding: 5px;
             background-image: url("images/background/back_map.jpg");
@@ -111,21 +111,22 @@ body {
             grid-area: a2;
         }
 }
+
 @media (width <= 1100px) and (width>=760px) {
-    .block {
+    .block_map {
         height: 50px;
         margin-top: -10px;
         margin-left: -8px;
         margin-right: -8px;
         display: grid;
         grid-template:
-            [start] "a1 a2 a3" [row-end]/ 1fr 1fr 1fr;
+            [start] "a1 a2 a3" [row-end]/ 1fr 1fr;
         gap: 20px;
         padding: 20px;
         background-color: rgb(0,0,0,75%);
     }
 
-        .block .button1 {
+        .block_map .button1 {
             background-color: rgb(243,226,190,75%);
             padding-top: 5px;
             padding-bottom: -10px;
@@ -138,7 +139,7 @@ body {
             text-decoration: none;
         }
 
-        .block .button2 {
+        .block_map .button2 {
             background-color: rgb(243,226,190,75%);
             padding-top: 5px;
             padding-bottom: -10px;
@@ -150,7 +151,7 @@ body {
             text-decoration: none;
         }
 
-        .block .switch {
+        .block_map .switch {
             grid-area: a3;
             background-color: rgb(243,226,190,75%);
             color: black;
@@ -163,25 +164,22 @@ body {
             padding-bottom: -10px;
         }
 
-    .block_info {
+    .container {
         margin-top: 20px;
         margin-left: 100px;
         margin-right: 100px;
         display: grid;
         grid-template:
-            [start]"a1 a1 a2 a2"[row2]
-            [row2]"a3 a3 a2 a2"[row3]
-            [row3]"a3 a3 a2 a2"[row-4]
-            [row4]"a3 a3 a2 a2"[row-5]
-            [row5]"a3 a3 a2 a2"[row-6]
-            [row6]"a3 a3 a2 a2"[row-end] / 1fr 1fr 1fr 1fr;
+            [start]"a1"[row2]
+            [row2]"a2"[row3]
+            [row3]"a3"[row-end]/ 1fr;
         gap: 20px;
     }
 
-        .block_info .block_info1 {
+        .container .block_info {
             padding: 5px;
             padding-top: 10px;
-            margin-bottom: 300px;
+            margin-bottom: 0px;
             background-color: rgb(0,0,0,75%);
             color: white;
             border-radius: 16px;
@@ -189,17 +187,8 @@ body {
             grid-area: a1;
         }
 
-        .block_info .block_text {
-            background-color: rgb(0,0,0,75%);
-            color: white;
-            margin-top: -300px;
-            border-radius: 16px;
-            font-size: 20px;
-            grid-area: a3;
-        }
-
-        .block_info .block_map {
-            margin-left: 20px;
+        .container .block_m {
+            margin-left: 15%;
             padding: 5px;
             background-image: url("images/background/back_map.jpg");
             background-repeat: no-repeat;
@@ -211,9 +200,22 @@ body {
             border-radius: 16px;
             grid-area: a2;
         }
+
+        .container .block_text {
+            background-color: rgb(0,0,0,75%);
+            color: white;
+            margin-left: 15%;
+            margin-top: 0px;
+            border-radius: 16px;
+            font-size: 20px;
+            grid-area: a3;
+            width: 565px;
+            height: 565px;
+        }
 }
+
 @media (max-width: 760px) and (min-width: 550px) {
-    .block {
+    .block_map {
         height: 50px;
         margin-top: -10px;
         margin-left: -10px;
@@ -226,7 +228,7 @@ body {
         background-color: rgb(0,0,0,75%);
     }
 
-        .block .button1 {
+        .block_map .button1 {
             background-color: rgb(243,226,190,75%);
             padding: 4%;
             margin-bottom: 3.5%;
@@ -239,7 +241,7 @@ body {
             text-decoration: none;
         }
 
-        .block .button2 {
+        .block_map .button2 {
             background-color: rgb(243,226,190,75%);
             padding: 4%;
             margin-bottom: 3.5%;
@@ -251,7 +253,7 @@ body {
             text-decoration: none;
         }
 
-        .block .switch {
+        .block_map .switch {
             grid-area: a3;
             background-color: rgb(243,226,190,75%);
             color: black;
@@ -263,25 +265,21 @@ body {
             margin-right: 25px;
         }
 
-    .block_info {
+    .container {
         margin-top: 20px;
-        margin-left: 100px;
+        margin-left: 25px;
         margin-right: 100px;
         display: grid;
         grid-template:
-            [start]"a1 a1 a2 a2"[row2]
-            [row2]"a3 a3 a2 a2"[row3]
-            [row3]"a3 a3 a2 a2"[row-4]
-            [row4]"a3 a3 a2 a2"[row-5]
-            [row5]"a3 a3 a2 a2"[row-6]
-            [row6]"a3 a3 a2 a2"[row-end] / 1fr 1fr 1fr 1fr;
+            [start]"a1"[row2]
+            [row2]"a2"[row3]
+            [row3]"a3"[row-end]/ 1fr;
         gap: 20px;
     }
 
-        .block_info .block_info1 {
+        .container .block_info {
             padding: 5px;
             padding-top: 10px;
-            margin-bottom: 300px;
             background-color: rgb(0,0,0,75%);
             color: white;
             border-radius: 16px;
@@ -289,17 +287,8 @@ body {
             grid-area: a1;
         }
 
-        .block_info .block_text {
-            background-color: rgb(0,0,0,75%);
-            color: white;
-            margin-top: -300px;
-            border-radius: 16px;
-            font-size: 20px;
-            grid-area: a3;
-        }
-
-        .block_info .block_map {
-            margin-left: 20px;
+        .container .block_m {
+            margin-left: 0px;
             padding: 5px;
             background-image: url("images/background/back_map.jpg");
             background-repeat: no-repeat;
@@ -311,13 +300,24 @@ body {
             border-radius: 16px;
             grid-area: a2;
         }
+
+        .container .block_text {
+            background-color: rgb(0,0,0,75%);
+            color: white;
+            border-radius: 16px;
+            font-size: 20px;
+            grid-area: a3;
+            width: 550px;
+            height: 550px;
+        }
 }
+
 @media (max-width: 550px) {
-    .block {
+    .block_map {
         height: 90px;
         margin-top: -10px;
-        margin-left: auto;
-        margin-right: -20px;
+        margin-left: -20px;
+        margin-right: -100px;
         display: grid;
         grid-template:
             [start] "a1 a3" [row2]
@@ -327,7 +327,7 @@ body {
         background-color: rgb(0,0,0,75%);
     }
 
-        .block .button1 {
+        .block_map .button1 {
             background-color: rgb(243,226,190,75%);
             padding-top: 2px;
             margin-left: 5%;
@@ -336,9 +336,10 @@ body {
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+            grid-area: a1;
         }
 
-        .block .button2 {
+        .block_map .button2 {
             background-color: rgb(243,226,190,75%);
             padding: 2%;
             margin-bottom: 3.5%;
@@ -348,9 +349,10 @@ body {
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
+            grid-area: a2;
         }
 
-        .block .switch {
+        .block_map .switch {
             grid-area: a3;
             background-color: rgb(243,226,190,75%);
             color: black;
@@ -361,52 +363,53 @@ body {
             margin-right: 25px;
         }
 
-    .block_info {
+    .container {
         margin-top: 20px;
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
         display: grid;
         grid-template:
-            [start]"a1 a1 a2 a2"[row2]
-            [row2]"a3 a3 a2 a2"[row3]
-            [row3]"a3 a3 a2 a2"[row-4]
-            [row4]"a3 a3 a2 a2"[row-5]
-            [row5]"a3 a3 a2 a2"[row-6]
-            [row6]"a3 a3 a2 a2"[row-end] / 1fr 1fr 1fr 1fr;
+            [start]"a1"[row2]
+            [row2]"a2"[row3]
+            [row3]"a3"[row-end] / 1fr;
         gap: 20px;
     }
 
-        .block_info .block_info1 {
+        .container .block_info {
             padding: 5px;
-            padding-top: 10px;
-            margin-bottom: 300px;
+            padding-top: 5px;
+            width: 350px;
             background-color: rgb(0,0,0,75%);
             color: white;
             border-radius: 16px;
             font-size: 20px;
+            margin-right: 20px;
             grid-area: a1;
         }
 
-        .block_info .block_text {
-            background-color: rgb(0,0,0,75%);
-            color: white;
-            margin-top: -300px;
-            border-radius: 16px;
-            font-size: 20px;
-            grid-area: a3;
-        }
-
-        .block_info .block_map {
-            margin-left: 20px;
+        .container .block_m {
+            margin-left: 0px;
+            margin-right: 20px;
             padding: 5px;
             background-image: url("images/background/back_map.jpg");
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-position: center;
-            width: 550px;
-            height: 550px;
+            width: 350px;
+            height: 350px;
             border: 3px solid black;
             border-radius: 16px;
             grid-area: a2;
+        }
+
+        .container .block_text {
+            background-color: rgb(0,0,0,75%);
+            color: white;
+            border-radius: 16px;
+            font-size: 20px;
+            grid-area: a3;
+            width: 365px;
+            height: 365px;
+            margin-right: 20px;
         }
 }
