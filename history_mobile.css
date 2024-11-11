@@ -1,47 +1,51 @@
 ﻿@media only screen and (orientation: portrait) and (max-width:768px) {
     body {
-        background-image: url('images/background/book_back.jpg');
+        background-image: url('images/background/histmobile.jpg');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-attachment: fixed;
         background-position: center;
     }
     .block_hist {
-        height: 70px;
+        height: 100px;
         margin-top: -10px;
-        margin-left: -8px;
-        margin-right: -80px;
+        margin-left: auto;
+        margin-right: -20px;
         display: grid;
         grid-template:
             [start] "c1 c3" [row2]
             [row2] "c2 c4" [row-end] / auto auto;
-        gap: 10px;
-        padding: 20px;
+        gap: 15px;
+        padding: 25px;
         background-color: rgb(0,0,0,75%);
     }
 
         .block_hist .button1 {
-            grid-area: c1;
             background-color: rgb(243,226,190,75%);
+            padding-top: 2px;
+            margin-left: 5%;
+            width: 140px;
+            height: 50px;
             color: black;
             align-content: center;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
-            padding-top: 10px;
-            padding-bottom: -25px;
+            margin-right: auto;
+            grid-area: c1;
         }
 
         .block_hist .button2 {
-            grid-area: c2;
             background-color: rgb(243,226,190,75%);
+            padding: 2%;
+            margin-bottom: -3.5%;
+            margin-left: 5%;
             color: black;
             align-content: center;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
-            padding: 7px;
-            padding-top: 10px;
+            grid-area: c2;
         }
 
         .block_hist .switch {
@@ -51,10 +55,8 @@
             align-content: center;
             border-radius: 16px;
             font-size: 20px;
-            padding-top: 5px;
-            margin-left: 175px;
+            margin-left: 35px;
             margin-right: 25px;
-            padding-bottom: -10px;
         }
 
     .container1 {
@@ -69,17 +71,18 @@
 
         .container1 .heading {
             background-color: rgb(0,0,0,75%);
-            margin-left: 35%;
+            align-content:center;
             margin-top: 20px;
             border-radius: 16px;
-            height: 100px;
-            width: 400px;
+            height: 45px;
+            width: 250px;
             grid-area: a1;
         }
 
-            .container1 .heading h1 {
+            .container1 .heading p {
                 padding-top: 5px;
                 color: white;
+                font-size:20px;
             }
 
         .container1 .intro {
@@ -88,6 +91,6 @@
             border-radius: 16px;
             color: white;
             grid-area: a2;
-            padding: 5px;
+            padding: 10px;
         }
 }

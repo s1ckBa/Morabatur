@@ -1,6 +1,6 @@
 ﻿@media only screen and (orientation: portrait) and (max-width:768px) {
     body {
-        background-image: url('images/background/backMobile.jpg');
+        background-image: url('images/background/mapmobile.jpg');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-attachment: fixed;
@@ -8,60 +8,62 @@
     }
 
     .block_map {
-        height: 50px;
+        height: 100px;
         margin-top: -10px;
-        margin-left: -8px;
-        margin-right: -8px;
+        margin-left: auto;
+        margin-right: -20px;
         display: grid;
         grid-template:
             [start] "c1 c3" [row2]
             [row2] "c2 c4" [row-end] / auto auto;
         gap: 15px;
-        padding: 20px;
+        padding: 25px;
         background-color: rgb(0,0,0,75%);
     }
 
         .block_map .button1 {
-            grid-area: с1;
             background-color: rgb(243,226,190,75%);
+            padding-top: 2px;
+            margin-left: 5%;
+            width: 140px;
+            height: 50px;
             color: black;
             align-content: center;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
-            padding-top: 5px;
-            padding-bottom: -25px;
+            margin-right: auto;
+            grid-area: c1;
         }
 
         .block_map .button2 {
-            grid-area: с2;
             background-color: rgb(243,226,190,75%);
+            padding: 2%;
+            margin-bottom: -3.5%;
+            margin-left: 5%;
             color: black;
             align-content: center;
             border-radius: 16px;
             font-size: 20px;
             text-decoration: none;
-            padding: 7px;
-            padding-top: 7px;
+            grid-area: c2;
         }
 
         .block_map .switch {
-            grid-area: с3;
+            grid-area: c3;
             background-color: rgb(243,226,190,75%);
             color: black;
             align-content: center;
             border-radius: 16px;
             font-size: 20px;
-            padding-top: 5px;
-            margin-left: 175px;
+            margin-left: 35px;
             margin-right: 25px;
-            padding-bottom: -10px;
         }
 
-    .block_info {
+    .container {
         margin-top: 20px;
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
         display: grid;
         grid-template:
             [start]"a1"[row2]
@@ -70,7 +72,7 @@
         gap: 20px;
     }
 
-        .block_info .block_info1 {
+        .container .block_info {
             padding: 5px;
             padding-top: 10px;
             background-color: rgb(0,0,0,75%);
@@ -80,7 +82,7 @@
             grid-area: a1;
         }
 
-        .block_info .block_text {
+        .container .block_text {
             background-color: rgb(0,0,0,75%);
             color: white;
             border-radius: 16px;
@@ -88,7 +90,7 @@
             grid-area: a3;
         }
 
-        .block_info .block_map {
+        .container .block_map {
             margin-left: 20px;
             padding: 5px;
             background-image: url("images/background/background.jpg");
