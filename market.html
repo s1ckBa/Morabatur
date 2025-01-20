@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маркетплейс</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+    <!-- Шапка -->
+        <div class="block">
+            <a href="HTMLPage1.html" target="_blank" class="main" align="center">
+                Главная
+            </a>
+            <div class="switch">
+                <table width="65%" border="0">
+                    <tr>
+                        <td align="center">Тема</td>
+                        <td align="center">
+                            <input type="checkbox" id="toggleCheckbox" class="Checkbox">
+                            <label for="toggleCheckbox"></label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="balance-container">
+            <div id="cart-icon">
+                <img src="source/cart-icon.png" alt="Корзина">
+                <div id="cart-count">0</div> <!-- Счётчик товаров -->
+            </div>
+        </div>
+
+    <main>
+        <section id="products">
+
+            <div class="product" data-group="skin" data-rarity="star">
+                <img src="source/septim.jpg" alt="septim">
+                <h3>Монета Септим</h3>
+                <div class="price-container">
+                    Цена: <span class="price">250</span> руб.
+                </div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+
+            <div class="product" data-group="skin" data-rarity="legendary">
+                <img src="source/rose.jpg" alt="rose">
+                <h3>Книга: Роза Северной страны</h3>
+                <div class="price-container">
+                    Цена: <span class="price">800</span> руб.
+                </div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+
+            <div class="product" data-group="skin" data-rarity="star">
+                <img src="source/LEGEND.jpg" alt="LEGEND">
+                <h3>Книга: Легенды Морабатура</h3>
+                <div class="price-container">
+                    Цена: <span class="price">1000</span> руб.
+                </div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            
+            <div class="product" data-group="skin" data-rarity="common">
+                <img src="images/background/back_map.jpg" alt="legends">
+                <h3>Карта мира: Морабатур</h3>
+                <div class="price-container">
+                    Цена: <span class="price">700</span> руб.
+                </div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+
+            <div class="product" data-group="skin" data-rarity="star">
+                <img src="source/skyrimHronic.jpg" alt="hronic">
+                <h3>Книга: Скайрим. Хроники</h3>
+                <div class="price-container">
+                    Цена: <span class="price">850</span> руб.
+                </div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+
+            <div class="product" data-group="skin" data-rarity="star">
+                <img src="source/tamrielLands.jpg" alt="tamriel">
+                <h3>Книга: Сказания Тамриэля. Земли</h3>
+                <div class="price-container">
+                    Цена: <span class="price">900</span> руб.
+                </div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-modal">
+        <h3>Корзина</h3>
+        <ul id="cart-items"></ul>
+        <button id="clear-cart">Удалить все товары</button>
+        <button id="checkout">Оплатить</button>
+        <button id="close-cart">Закрыть</button>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>Сайт создан: <strong>s1ckBa</strong> | 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
